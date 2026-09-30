@@ -97,7 +97,7 @@ show();
 </script></body></html>'''
 
 
-# Set QUIZ_PUBLIC_URL to your public quiz URL when hosting it online.
+
 PUBLIC_URL = "https://saudi-national-day-quiz.onrender.com/"
 
 
@@ -128,7 +128,6 @@ class QuizHandler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-	# Run as a desktop app when pywebview is installed; otherwise use the browser.
 	PORT = int(os.environ.get("PORT", "8000"))
 	server = HTTPServer(("0.0.0.0", PORT), QuizHandler)
 	url = quiz_url()
